@@ -1,0 +1,14 @@
+name: VM1 classic protection wake
+on:
+  pull_request:
+    branches:
+      - main
+jobs:
+  wake:
+    name: VM1_CLASSIC_WAKE
+    runs-on: ubuntu-latest
+    steps:
+      - name: Controlled delay
+        run: sleep 45
+      - name: Success
+        run: echo VM1 controlled wake
