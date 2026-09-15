@@ -1,7 +1,7 @@
 pull_request_rules:
-  - name: VM1 classic branch-protection status-finalizer freshness
+  - name: VM1 classic branch-protection check-run finalizer freshness
     conditions:
-      - title = VM1_CLASSIC_PROTECTION_STATUS_WAKE
+      - title = VM1_CLASSIC_PROTECTION_CHECKRUN_WAKE
       - check-success = VM1_CLASSIC_WAKE
     actions:
       merge:
